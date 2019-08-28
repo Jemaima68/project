@@ -1,0 +1,16 @@
+{
+    "name": "Nomis AssetBank",
+    "short_name": "Nomis",
+    "start_url": "/nomis/index.html",
+    "display": "standalone",
+    "background_color": "white",
+    "theme_color": "rgb(31, 116, 69)",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "/nomis/assets/images/logo.png",
+            "type": "image/png",
+            "sizes": "214x214"
+        }
+    ]
+}

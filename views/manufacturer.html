@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Manufacturer</title>
+ 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="../assets/css/template.css">
+    <link rel="stylesheet" href="../assets/css/lineinput.css">
+    <link rel="manifest" href="../manifest.json">
+</head>
+<body>
+    <div class="backdrop row no-gutter">
+        <div class="main col-xl-5 col-lg-6 col-md-12 col-sm-12 col-12 p-lg-0 mx-auto">
+            <!-- <div  id="topbar"></div> -->
+            <div id="top-nav" class="m-0">
+                <div class="dropdown logout-btn">
+                    <button class="btn btn-link p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="../assets/images/person.png" alt="logout" id="person-icon">
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <button type="button" class="btn btn-link" onclick="onLogout()">Logout</button>
+                    </div>
+                </div> 
+                <a href="./unitselection.html">
+                    <img src="../assets/images/unit.png" alt="unit selection" id="unit-icon">
+                </a>
+                <p>Manufacturer</p>
+            </div>
+            <div id="main-content">
+                <div id="menu-list" class="row p-2">    
+                </div>
+                <div class="p-3 pt-5">
+                    <p>Or enter the name of another manufacturer</p>   
+                    <div class="inpt-group">
+                        <input type="text" id="manufacturer-name" class="form-control">
+                        <span class="error">Error message</span>
+                        <label for="manufacturer-name" id="label">Manufacturer Name</label>
+                    </div>
+                </div>
+            </div>  
+            <div id="unit-selected" class="text-center">
+                    <p id="unit-selected-text">Restaurantx</p>
+            </div>
+            <div id="bottom-nav">
+                <div id="backBtn">
+                    <a href="./devicecondition.html">
+                        <i class="fas fa-chevron-left"></i>
+                        <span class="b-nav-txt">BACK</span>
+                    </a>
+                </div>
+                <div id="page-indicator">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <div id="nextBtn">
+                    <a href="./devicename.html" class="disabled">
+                        <span class="b-nav-txt">NEXT</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="../assets/js/template.js"></script>
+    <script src="../assets/js/manufacturer.js"></script>
+</body>
+</html>

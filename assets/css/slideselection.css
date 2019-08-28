@@ -1,0 +1,61 @@
+.bottom-bar {
+    padding: 0 10%;
+}
+
+.slide-selection {
+    /* font-family: helvetica, arial, sans-serif; */
+    display: inline-block;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.slide-selection ul {
+    list-style-type: none;
+    text-align: center;
+    width: 100%;
+    padding: 0;
+}
+    
+ul li {
+    display: inline-block;
+    float: left;
+    margin: 0;
+    width: 20%
+} 
+
+li.active a{
+    color: #444444;
+} 
+
+li:hover a{
+    color: #444444;
+}
+      
+a {
+    border-bottom: 5px solid #fff;
+    color: #aaa;
+    display: block;
+    padding: 5px 0;
+    text-decoration: none;
+    transition: all .2s ease;
+    font-size: 12px;
+}   
+
+a:hover {
+    border-bottom-color: #ccc;
+    color: #888;
+    text-decoration: none;
+}
+    
+.active-marker {
+    background: #707070;;
+    bottom: 0;
+    display: block;
+    height: 5px;
+    position: absolute;
+    left: 0;
+    transition: all .2s cubic-bezier(.25, .25, .25, 1.25);
+    width: 20%;
+}

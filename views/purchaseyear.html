@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Purchase Year</title>
+ 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="../assets/css/template.css">
+    <link rel="stylesheet" href="../assets/css/datepicker.css">
+    <link rel="manifest" href="../manifest.json">
+</head>
+<body>
+    <div class="backdrop row no-gutter">
+        <div class="main col-xl-5 col-lg-6 col-md-12 col-sm-12 col-12 p-lg-0 mx-auto">
+            <!-- <div  id="topbar"></div> -->
+            <div id="top-nav" class="m-0">
+                <div class="dropdown logout-btn">
+                    <button class="btn btn-link p-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="../assets/images/person.png" alt="logout" id="person-icon">
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <button type="button" class="btn btn-link" onclick="onLogout()">Logout</button>
+                    </div>
+                </div> 
+                <a href="./unitselection.html">
+                    <img src="../assets/images/unit.png" alt="unit selection" id="unit-icon">
+                </a>
+                <p>Purchase Year</p>
+            </div>
+            <div id="main-content">
+                <!-- DATE PICKER HTML -->
+                <div id="date-picker">
+                    <div>
+                        <div id="date-picker-header">
+                            <div id="date-picker-dow"></div>
+                            <div id="date-picker-month"></div>
+                            <div id="date-picker-day"></div>
+                            <div id="date-picker-year"></div>
+                        </div>
+                        <div id="date-picker-cal-month">
+                            <span id="date-picker-cal-month-prev"><i class="icon ion-chevron-left"></i>&nbsp;&nbsp;&nbsp;</span>
+                            <p id="date-picker-cal-month-label"></p>
+                            <span id="date-picker-cal-month-next">&nbsp;&nbsp;&nbsp;<i class="icon ion-chevron-right"></i></span>
+                        </div>
+                        <div id="date-picker-cal-wrapper">
+                            <table id="date-picker-cal" class="table borderless">
+                                <thead>
+                                    <tr>
+                                        <td>S</td><td>M</td><td>T</td><td>W</td><td>T</td><td>F</td><td>S</td>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                        </div>
+                        <div id="date-picker-buttons" class="text-right">
+                            <a id="date-picker-reset-button" class="btn btn-sm btn-flat"><i class="icon ion-android-calendar"></i></a>
+                            <a id="date-picker-cancel-button" class="btn btn-sm btn-flat">Cancel</a>
+                            <a id="date-picker-ok-button" class="btn btn-sm btn-flat">OK</a>
+                        </div>
+                    </div>
+                </div>
+        <!-- DATE PICKER -->
+                <div class="purchase-year-btn-box text-center">
+                    <button class="btn min-btn" type="button" id="date-button">SELECT PURCHASE DATE</button>
+                    <p class="list-item-subtext">Or estimate what year the device was purchased:</p>
+                </div>
+                <div id="menu-list">
+                </div>
+            </div>
+            <div id="unit-selected" class="text-center">
+                    <p id="unit-selected-text">Restaurantx</p>
+            </div>
+            <div id="bottom-nav">
+                <div id="backBtn">
+                    <a href="./devicetype.html">
+                        <i class="fas fa-chevron-left"></i>
+                        <span class="b-nav-txt">BACK</span>
+                    </a>
+                </div>
+                <div id="page-indicator">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <div id="nextBtn">
+                    <a href="./warranty.html" class="disabled">
+                        <span class="b-nav-txt">NEXT</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../assets/js/datepicker.js"></script>
+    <script src="../assets/js/template.js"></script>
+    <script src="../assets/js/purchase.js"></script>
+</body>
+</html>

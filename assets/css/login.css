@@ -1,0 +1,20 @@
+html, body{
+    overflow: hidden;
+}
+
+#logo {
+    width: 80%;
+}
+
+#assetbank {
+    background: rgb(31, 116, 69);
+    color: #fff;
+    height: 63px;
+}
+
+.bottom-bar {
+    padding: 10px;
+    width: 100%;
+    position: absolute;
+    bottom: 5px;
+}
